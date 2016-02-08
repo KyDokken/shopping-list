@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* General styles
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+* {
+    border: 1px solid red;
+}
+
+html {
+    background: url("../images/list.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 8rem;
+}
+
+section {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+
+/* Header styles
+(all the styles inside the < header > or < nav > tags)
+*/
+
+
+/* Content styles
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+.progressbar,
+.input {
+    text-align: center;
+}
+
+.lists {
+    display: inline-block;
+    width: 32.9%;
+}
+
+
+/* Footer styles
+(all the styles inside the < footer > tag)
+*/
