@@ -4,29 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <header class="top">
-        <div>
-
-        </div>
+        <i class="fa fa-shopping-cart"></i>
     </header>
     <section class="progressbar"></section>
     <section class="input">
         <input type="text" value="" maxlength="20" placeholder="Add an item" id="addItemValue">
-        <select name="cuisines" id="cuisine-name">
-            <option disabled="" selected="" value="chooselist">Please choose a Cuisine</option>
-            <option value="need"></option>
-            <option value="want"></option>
-            <option value="staples"></option>
+        <select name="lists" id="list-name">
+            <option disabled="" selected="" value="chooselist">Select List</option>
+            <option value="need">Need</option>
+            <option value="want">Want</option>
+            <option value="staples">Staple</option>
         </select>
         <button type="submit" id="addItem">+</button>
 
+
     </section>
-    <section class="list">
-        <ul class="wrapper">
+    <section class="list-container">
+        <ul class="table-header-wrap">
             <li class="lists">
                 Need
             </li>
@@ -36,32 +37,75 @@
             </li>
 
             <li class="lists">
-                Staples
+                Staple
             </li>
         </ul>
 
-        <ul class="wrapper">
+        <ul class="list-wrapper">
             <li class="lists">
                 <ul>
-                    <li class="litems">Beef Eggs</li>
-                    <li class="litems">Yams Pears</li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Beef Eggs
+                        <button class="delete">x</button>
+                    </li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Yams Pears
+                        <button class="delete">x</button>
+                    </li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Dogs Cats
+                        <button class="delete">x</button>
+                    </li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Rhino Monkey
+                        <button class="delete">x</button>
+                    </li>
                 </ul>
             </li>
 
             <li class="lists">
                 <ul>
-                    <li class="litems">Stout Beer Wine Chard</li>
-                    <li class="litems">Apples with Cinnamon</li>
+                    <li class="li-items checked">
+                        <button class="checkbox">✓</button>Stout Beer Wine Chard
+                        <button class="delete">x</button>
+                    </li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Apples with Cinnamon
+                        <button class="delete">x</button>
+                    </li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Dogs Cats
+                        <button class="delete">x</button>
+                    </li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Rhino Monkey
+                        <button class="delete">x</button>
+                    </li>
                 </ul>
             </li>
 
             <li class="lists">
                 <ul>
-                    <li class="litems">Coffee with icecream</li>
-                    <li class="litems">Porsche with a sunroof</li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Coffee with icecream
+                        <button class="delete">x</button>
+                    </li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Porsche with a sunroof
+                        <button class="delete">x</button>
+                    </li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Dogs Cats
+                        <button class="delete">x</button>
+                    </li>
+                    <li class="li-items">
+                        <button class="checkbox">✓</button>Rhino Monkey
+                        <button class="delete">x</button>
+                    </li>
                 </ul>
             </li>
         </ul>
+        <button type="Delete" id="delete-all">Delete list</button>
     </section>
 </body>
 
