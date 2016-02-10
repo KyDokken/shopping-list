@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>List</title>
     <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
@@ -20,7 +21,7 @@
             <option disabled="" selected="" value="chooselist">Select List</option>
             <option value="need">Need</option>
             <option value="want">Want</option>
-            <option value="staples">Staple</option>
+            <option value="staple">Staple</option>
         </select>
         <button type="submit" id="addItem">+</button>
 
@@ -42,71 +43,29 @@
         </ul>
 
         <ul class="list-wrapper">
-            <li class="lists">
-                <ul>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Beef Eggs
-                        <button class="delete">x</button>
-                    </li>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Yams Pears
-                        <button class="delete">x</button>
-                    </li>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Dogs Cats
-                        <button class="delete">x</button>
-                    </li>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Rhino Monkey
-                        <button class="delete">x</button>
-                    </li>
+            <li class="lists need">
+                <ul class="ulwrap">
+
                 </ul>
             </li>
 
-            <li class="lists">
-                <ul>
-                    <li class="li-items checked">
-                        <button class="checkbox">✓</button>Stout Beer Wine Chard
-                        <button class="delete">x</button>
-                    </li>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Apples with Cinnamon
-                        <button class="delete">x</button>
-                    </li>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Dogs Cats
-                        <button class="delete">x</button>
-                    </li>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Rhino Monkey
-                        <button class="delete">x</button>
-                    </li>
+            <li class="lists want">
+                <ul class="ulwrap">
+
                 </ul>
             </li>
 
-            <li class="lists">
-                <ul>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Coffee with icecream
-                        <button class="delete">x</button>
-                    </li>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Porsche with a sunroof
-                        <button class="delete">x</button>
-                    </li>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Dogs Cats
-                        <button class="delete">x</button>
-                    </li>
-                    <li class="li-items">
-                        <button class="checkbox">✓</button>Rhino Monkey
-                        <button class="delete">x</button>
-                    </li>
+            <li class="lists staple">
+                <ul class="ulwrap">
+
                 </ul>
             </li>
         </ul>
         <button type="Delete" id="delete-all">Delete list</button>
     </section>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
